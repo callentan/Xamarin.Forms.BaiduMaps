@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -23,7 +23,8 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -42,33 +43,33 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ObjcBindingApiDefinition Include="ApiDefinition_Location_v3_3_1.cs" />
-    <ObjcBindingApiDefinition Include="ApiDefinition_Map_v3_3_1.cs" />
-    <ObjcBindingApiDefinition Include="ApiDefinition_Utils_v3_3_1.cs" />
-    <ObjcBindingApiDefinition Include="ApiDefinition_Cloud_v3_3_1.cs" />
-    <ObjcBindingApiDefinition Include="ApiDefinition_Radar_v3_3_1.cs" />
-    <ObjcBindingApiDefinition Include="ApiDefinition_Search_v3_3_1.cs" />
-    <ObjcBindingApiDefinition Include="ApiDefinition_Base_v3_3_1.cs" />
+    <ObjcBindingApiDefinition Include="ApiDefinition_Map_v6_1_0.cs" />
+    <ObjcBindingApiDefinition Include="ApiDefinition_Utils_v6_1_0.cs" />
+    <ObjcBindingApiDefinition Include="ApiDefinition_Cloud_v6_1_0.cs" />
+    <ObjcBindingApiDefinition Include="ApiDefinition_Search_v6_1_0.cs" />
+    <ObjcBindingApiDefinition Include="ApiDefinition_Base_v6_1_0.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ObjcBindingCoreSource Include="StructsAndEnums_Base_v3_3_1.cs" />
-    <ObjcBindingCoreSource Include="StructsAndEnums_Location_v3_3_1.cs" />
-    <ObjcBindingCoreSource Include="StructsAndEnums_Map_v3_3_1.cs" />
-    <ObjcBindingCoreSource Include="StructsAndEnums_Utils_v3_3_1.cs" />
-    <ObjcBindingCoreSource Include="StructsAndEnums_Cloud_v3_3_1.cs" />
-    <ObjcBindingCoreSource Include="StructsAndEnums_Radar_v3_3_1.cs" />
-    <ObjcBindingCoreSource Include="StructsAndEnums_Search_v3_3_1.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums_Base_v6_1_0.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums_Location_v6_1_0.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums_Map_v6_1_0.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums_Utils_v6_1_0.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums_Cloud_v6_1_0.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums_Radar_v6_1_0.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums_Search_v6_1_0.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ObjcBindingNativeLibrary Include="BaiduMapAPI_Base_v3_3_1" />
     <ObjcBindingNativeLibrary Include="libcrypto.a" />
     <ObjcBindingNativeLibrary Include="libssl.a" />
-    <ObjcBindingNativeLibrary Include="BaiduMapAPI_Utils_v3_3_1" />
-    <ObjcBindingNativeLibrary Include="BaiduMapAPI_Map_v3_3_1" />
-    <ObjcBindingNativeLibrary Include="BaiduMapAPI_Location_v3_3_1" />
-    <ObjcBindingNativeLibrary Include="BaiduMapAPI_Radar_v3_3_1" />
-    <ObjcBindingNativeLibrary Include="BaiduMapAPI_Cloud_v3_3_1" />
-    <ObjcBindingNativeLibrary Include="BaiduMapAPI_Search_v3_3_1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingNativeLibrary Include="BaiduMapAPI_Base_v6_1_0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingNativeLibrary Include="BaiduMapAPI_Cloud_v6_1_0" />
+    <ObjcBindingNativeLibrary Include="BaiduMapAPI_Map_v6_1_0" />
+    <ObjcBindingNativeLibrary Include="BaiduMapAPI_Search_v6_1_0" />
+    <ObjcBindingNativeLibrary Include="BaiduMapAPI_Utils_v6_1_0" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
 </Project>

@@ -5,15 +5,15 @@ using BMapBinding;
 
 namespace Xamarin.Forms.BaiduMaps.iOS
 {
-    internal class LocationServiceImpl : BMKLocationServiceDelegate, ILocationService
+    internal class LocationServiceImpl : BMKWalkCycleLocationServiceDelegate, ILocationService
     {
-        BMKLocationService native;
+        BMKWalkCycleLocationService native;
         BMKMapView mapView;
         public LocationServiceImpl(BMKMapView mapView)
         {
             this.mapView = mapView;
 
-            native = new BMKLocationService();
+            native = new BMKWalkCycleLocationService();
             native.Delegate = this;
         }
 

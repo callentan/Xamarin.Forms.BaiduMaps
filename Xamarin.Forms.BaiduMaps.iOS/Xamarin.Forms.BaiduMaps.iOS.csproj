@@ -45,9 +45,15 @@
     </MtouchTlsProvider>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BMapBinding.iOS">
+      <HintPath>..\BMapBinding.iOS\bin\Debug\BMapBinding.iOS.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
+    <Reference Include="Xamarin.Forms.BaiduMaps">
+      <HintPath>..\Xamarin.Forms.BaiduMaps\bin\Debug\Xamarin.Forms.BaiduMaps.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.Forms.4.8.0.1687\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
@@ -63,6 +69,7 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LocationServiceImpl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MapView.cs" />
     <Compile Include="MapRenderer.cs" />
@@ -73,22 +80,11 @@
     <Compile Include="FormsBaiduMaps.cs" />
     <Compile Include="CoordinateEx.cs" />
     <Compile Include="OfflineMapImpl.cs" />
-    <Compile Include="LocationServiceImpl.cs" />
     <Compile Include="PolygonImpl.cs" />
     <Compile Include="CircleImpl.cs" />
     <Compile Include="CalculateUtilsImpl.cs" />
     <Compile Include="ProjectionImpl.cs" />
     <Compile Include="MapManagerImpl.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Xamarin.Forms.BaiduMaps\Xamarin.Forms.BaiduMaps.csproj">
-      <Project>{AD7AE334-360D-4769-8F72-BD79C078FE87}</Project>
-      <Name>Xamarin.Forms.BaiduMaps</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BMapBinding.iOS\BMapBinding.iOS.csproj">
-      <Project>{EB06C100-FAFE-4BEB-A574-EF4B8561CC32}</Project>
-      <Name>BMapBinding.iOS</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

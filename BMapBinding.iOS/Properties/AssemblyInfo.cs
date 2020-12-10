@@ -18,7 +18,7 @@ using ObjCRuntime;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Booway")]
 [assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("Copyleft _hug3id 2016.12")]
+[assembly: AssemblyCopyright("Copyright_Callen_Tan_2020.12")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -34,40 +34,40 @@ using ObjCRuntime;
 //[assembly: AssemblyDelaySign(false)]
 //[assembly: AssemblyKeyFile("")]
 
-[assembly: LinkWith("BaiduMapAPI_Base_v3_3_1",
+[assembly: LinkWith("BaiduMapAPI_Base",
     LinkTarget.ArmV7 | LinkTarget.Simulator | LinkTarget.Simulator64 | LinkTarget.Arm64,
     Frameworks = "CoreTelephony SystemConfiguration",
     LinkerFlags = "-ObjC -lsqlite3.0",
     SmartLink = true,
     ForceLoad = true)]
 
-[assembly: LinkWith("BaiduMapAPI_Utils_v3_3_1",
+[assembly: LinkWith("BaiduMapAPI_Utils",
     LinkTarget.ArmV7 | LinkTarget.Simulator | LinkTarget.Simulator64 | LinkTarget.Arm64,
     LinkerFlags = "-ObjC",
     SmartLink = true,
     ForceLoad = true)]
 
-[assembly: LinkWith("BaiduMapAPI_Map_v3_3_1",
+[assembly: LinkWith("BaiduMapAPI_Map",
     LinkTarget.ArmV7 | LinkTarget.Simulator | LinkTarget.Simulator64 | LinkTarget.Arm64,
     Frameworks = "Security OpenGLES QuartzCore",
-    LinkerFlags = "-ObjC -lstdc++.6.0.9",
+    LinkerFlags = "-ObjC -libstdc++",
     SmartLink = true,
     ForceLoad = true)]
 
-[assembly: LinkWith("BaiduMapAPI_Location_v3_3_1",
+[assembly: LinkWith("BaiduMapAPI_Location",
     LinkTarget.ArmV7 | LinkTarget.Simulator | LinkTarget.Simulator64 | LinkTarget.Arm64,
     Frameworks = "CoreLocation",
     LinkerFlags = "-ObjC",
     SmartLink = true,
     ForceLoad = true)]
 
-[assembly: LinkWith("BaiduMapAPI_Search_v3_3_1",
+[assembly: LinkWith("BaiduMapAPI_Search",
     LinkTarget.ArmV7 | LinkTarget.Simulator | LinkTarget.Simulator64 | LinkTarget.Arm64,
     LinkerFlags = "-ObjC",
     SmartLink = true,
     ForceLoad = true)]
 
-[assembly: LinkWith("BaiduMapAPI_Cloud_v3_3_1",
+[assembly: LinkWith("BaiduMapAPI_Cloud",
     LinkTarget.ArmV7 | LinkTarget.Simulator | LinkTarget.Simulator64 | LinkTarget.Arm64,
     LinkerFlags = "-ObjC",
     SmartLink = true,

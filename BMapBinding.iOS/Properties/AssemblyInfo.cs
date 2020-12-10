@@ -67,12 +67,6 @@ using ObjCRuntime;
     SmartLink = true,
     ForceLoad = true)]
 
-[assembly: LinkWith("BaiduMapAPI_Radar_v3_3_1",
-    LinkTarget.ArmV7 | LinkTarget.Simulator | LinkTarget.Simulator64 | LinkTarget.Arm64,
-    LinkerFlags = "-ObjC",
-    SmartLink = true,
-    ForceLoad = true)]
-
 [assembly: LinkWith("BaiduMapAPI_Cloud_v3_3_1",
     LinkTarget.ArmV7 | LinkTarget.Simulator | LinkTarget.Simulator64 | LinkTarget.Arm64,
     LinkerFlags = "-ObjC",
